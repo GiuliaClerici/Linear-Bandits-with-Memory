@@ -9,7 +9,7 @@ This repository contains the following files:
 - [plot.py](plot.py) contains the code to plot the results obtained from exp.py, model_selection_alpha.py, model_selection_m.py,and showed in Fig. 1 (left pane).
 - [regret_rising.py](regret_rising.py) contains the code to reproduce the performance of O3M, Policy $\pi_2$, OFUL, and Greedy for the experiment in Fig. 2 in the Supplementary Material.  
 
-In order to run the experiments presented in Fig. 1, run (~2-3 hours):
+In order to run the experiments presented in Fig. 1 (left pane), run (~2-3 hours):
 ```python
 $ python exp.py
 $ python model_selection_alpha.py
