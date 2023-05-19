@@ -26,5 +26,3 @@ To run the additional experiment presented in the Supplementary Material, run th
 ```python
 $ python run_exp_sup.py
 ```
-
-The plots generated are saved in the res folder.
