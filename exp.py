@@ -291,13 +291,13 @@ for run in range(n_runs):
     runs_block_rwds = np.append(runs_block_rwds, block_rwds[:1200])
     runs_rwds_lin = np.append(runs_rwds_lin, rwds_lin[:1200])
 
-with open('plots/data_rwds_' + str(alpha) +  '.pkl', 'wb') as f:
+with open('data_rwds_' + str(alpha) +  '.pkl', 'wb') as f:
     pickle.dump([n_runs, T, alpha, m, runs_rwds, runs_rwds_greedy, runs_rwds_b, runs_block_rwds, runs_rwds_lin], f)
 
+'''
 T = 1200
 runs_rwds = runs_rwds.reshape(n_runs, T)
 runs_rwds_greedy = runs_rwds_greedy.reshape(n_runs, T)
-#runs_rwds_b = runs_rwds_b.reshape(n_runs, T)
 runs_block_rwds = runs_block_rwds.reshape(n_runs, T)
 runs_rwds_lin = runs_rwds_lin.reshape(n_runs, T)
 for run in range(n_runs):
@@ -328,8 +328,6 @@ ax = plt.legend(fontsize='xx-large')
 plt.grid()
 plt.show()
 
-#-----------------------------------------------------------------------------------------
-'''
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 ax = plt.figure(1)

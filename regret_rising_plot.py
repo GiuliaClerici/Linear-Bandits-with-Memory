@@ -20,26 +20,26 @@ horizons_OMBlock = np.array([])
 
 n_files = 19
 for n_file in range(n_files):
-    with open(r"plots_server/regret_rising/regret_rising_" + str(n_file) + ".pkl", "rb") as input_file:
+    with open(r"regret_rising/regret_rising_" + str(n_file) + ".pkl", "rb") as input_file:
         n_runs, T_overopt, T_block, alpha, m, regret_OM, regret_OMBlock = pickle.load(input_file)
-        print("right after: ", regret_OM)
+        #print("right after: ", regret_OM)
         #regret_OM = np.append(regret_OM, totoveropt_regret)
         #regret_OMBlock = np.append(regret_OMBlock, totblock_regret)
         horizons_OM = np.append(horizons_OM, T_overopt)
         horizons_OMBlock = np.append(horizons_OMBlock, T_block)
-        print(n_file)
-        print(horizons_OM.shape)
-        print(regret_OM.shape)
+        #print(n_file)
+        #print(horizons_OM.shape)
+        #print(regret_OM.shape)
         if n_file == 16:
             regOM_old = np.copy(regret_OM)
             regOMBlock_old = np.copy(regret_OMBlock)
         if n_file > 16:
-            print("here: ", regret_OM)
+            #print("here: ", regret_OM)
             regret_OM = np.append(regOM_old, regret_OM)
             regret_OMBlock = np.append(regOMBlock_old, regret_OMBlock)
 
 
-with open(r"plots/regret_rising_greedy18.pkl", "rb") as input_file:
+with open(r"regret_rising_greedy18.pkl", "rb") as input_file:
     n_runs, T_overopt, T_block, alpha, m, tot_rwds_greedy_a, tot_rwds_greedy_b = pickle.load(input_file)
 
 tot_rwds_O3M = np.zeros(n_files)
@@ -89,7 +89,7 @@ ax = plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
 
 ax = plt.grid()
 
-name_fig = "plots/regret_rising.pdf"
+name_fig = "regret_rising.pdf"
 ax = plt.savefig(name_fig, format="pdf", bbox_inches='tight', transparent=False)
 
 plt.show()

@@ -9,7 +9,7 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
 #with open(r"plots/plots_definitive/greedy_subopt/data_rwds_greedy_subopt.pkl", "rb") as input_file:
-with open(r"plots_server/greedy_subopt_benchmark_new.pkl", "rb") as input_file:
+with open(r"greedy_subopt_benchmark_new.pkl", "rb") as input_file:
     n_runs, T, alpha, m, runs_rwds, runs_rwds_greedy, runs_rwds_e2, runs_rwds_lin = pickle.load(input_file)
 
 runs_rwds = runs_rwds.reshape(n_runs, T)
@@ -74,6 +74,6 @@ ax = plt.xticks(fontsize=17)
 ax = plt.title("")
 ax = plt.grid()
 
-name_fig = "plots_server/Performance_greedy_subopt.pdf"
+name_fig = "Performance_greedy_subopt.pdf"
 ax = plt.savefig(name_fig, format="pdf", bbox_inches='tight', transparent=False)
 plt.show()

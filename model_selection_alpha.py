@@ -267,7 +267,7 @@ for run in range(n_runs):
     # -------------------------------------------------------------------------------------
     '''
 
-with open('plots/data_combiner_' + str(alpha_star) +  '_LinUCB.pkl', 'wb') as f:
+with open('data_combiner_' + str(alpha_star) +  '_LinUCB.pkl', 'wb') as f:
     pickle.dump([n_runs, T, alpha_star, m_star, runs_rwds], f)  # runs_rwds_o, runs_rwds_lin
 
 '''

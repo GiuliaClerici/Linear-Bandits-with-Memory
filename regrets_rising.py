@@ -244,5 +244,5 @@ for n_rep in range(n_repetitions):
         totblock_regret = np.append(totblock_regret, tot_greedy - totrwds_block)
 
         #-------------------------------------------------------------------------------------
-        with open('plots/regret_rising_'+ str(run) +'_rep'+ str(n_rep) +'.pkl', 'wb') as f:
+        with open('regret_rising_'+ str(run) +'_rep'+ str(n_rep) +'.pkl', 'wb') as f:
             pickle.dump([n_runs, T_overopt, T_block, alpha, m, totoveropt_regret, totblock_regret], f)

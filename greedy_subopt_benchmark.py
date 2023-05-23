@@ -262,5 +262,5 @@ for run in range(n_runs):
     runs_rwds_e2 = np.append(runs_rwds_e2, rwds_e2)
     runs_rwds_lin = np.append(runs_rwds_lin, rwds_lin)
 
-with open('plots/greedy_subopt_benchmark.pkl', 'wb') as f:
+with open('greedy_subopt_benchmark.pkl', 'wb') as f:
     pickle.dump([n_runs, T, alpha, m, runs_rwds, runs_rwds_greedy, runs_rwds_e2, runs_rwds_lin], f)
