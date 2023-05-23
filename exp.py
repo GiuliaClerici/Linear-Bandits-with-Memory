@@ -33,8 +33,8 @@ T = 1218 # (m + L) * 50
 #theta[1] = - 0.65
 #print("Theta *: ", theta)
 #print(torch.norm(theta))
-alpha = 3
-flag_rising_block = [0 if alpha > 0 else 1]
+alpha = -3
+flag_rising_block = [0 if alpha < 0 else 1]
 noise_level = 0.1
 delta_A = 1
 
@@ -253,7 +253,7 @@ for run in range(n_runs):
 
         block_rwd_array[m:] = torch.tensor(block_rwds[-L:])
         A_block = block_mab.gen_A_block_mL(preactions_block)
-        if alpha < 0.0:
+        if alpha > 0.0:
             block_mab.update_coeff(block_rwd_array, actions, A_block, 1)
         else:
             block_mab.update_coeff(block_rwd_array, actions, A_block, 0)

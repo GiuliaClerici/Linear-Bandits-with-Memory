@@ -29,7 +29,7 @@ T = 1200 # (m + L) * 50
 #theta[1] = - 0.65
 #print("Theta *: ", theta)
 #print(torch.norm(theta))
-alpha = 1  # instead of 1
+alpha = 1
 noise_level = 0.3
 delta_A = 1
 
