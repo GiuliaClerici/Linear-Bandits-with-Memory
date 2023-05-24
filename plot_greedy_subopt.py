@@ -8,7 +8,6 @@ import sys
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-#with open(r"plots/plots_definitive/greedy_subopt/data_rwds_greedy_subopt.pkl", "rb") as input_file:
 with open(r"greedy_subopt_benchmark_new.pkl", "rb") as input_file:
     n_runs, T, alpha, m, runs_rwds, runs_rwds_greedy, runs_rwds_e2, runs_rwds_lin = pickle.load(input_file)
 
