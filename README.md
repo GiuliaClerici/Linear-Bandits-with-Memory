@@ -24,7 +24,7 @@ $ python greedy_subopt_benchmark.py
 $ python plot_greedy_subopt.py
 ```
 
-To run the additional experiment presented in the Supplementary Material, run the following command (~1 week):
+To run the additional experiment presented in the Supplementary Material, run the following command (~2 weeks):
 ```python
 $ python regret_rising.py
 $ python regret_rising_plot.py
