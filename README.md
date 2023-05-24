@@ -4,9 +4,10 @@ This repository contains the code for Linear Bandits with Memory (LBM), to repro
 This repository contains the following files:
 - [exp.py](exp.py) contains the code to reproduce the performance of O3M, OFUL and Greedy on a rotting instance of LBM. 
 - [model_selection_alpha.py](model_selection_alpha.py) contains the code to reproduce the performance of Bandit Combiner for the setting where the parameter $\gamma$ is misspecified. 
-- [model_selection_m.py](model_selection_m.py) contains the code to reproduce the performance of Bandit Combiner for the setting where the parameter $m$ is misspecified.
-- [greedy_subopt_benchmark.py](greedy_subopt_benchmark.py) contains the code to reproduce the performance of O3M, Policy $\pi_2$, OFUL, and Greedy for the experiment in Fig. 1 (right pane). 
+- [model_selection_m.py](model_selection_m.py) contains the code to reproduce the performance of Bandit Combiner for the setting where the parameter $m$ is misspecified. 
 - [plot.py](plot.py) contains the code to plot the results obtained from exp.py, model_selection_alpha.py, model_selection_m.py,and showed in Fig. 1 (left pane).
+- [greedy_subopt_benchmark.py](greedy_subopt_benchmark.py) contains the code to reproduce the performance of O3M, Policy $\pi_2$, OFUL, and Greedy for the experiment in Fig. 1 (right pane). 
+- [plot_greedy_subopt.py](plot_greedy_subopt.py) contains the code to reproduce the plot in Fig. 1 (right pane).
 - [regret_rising.py](regret_rising.py) contains the code to reproduce the experiment where we compare the regret of O3M and OM-Block for several time horizons. 
 - [regret_rising_plot.py](regret_rising_plot.py) contains the code to plot the results obtained from regret_rising.py for the experiment in Fig. 2 in the Supplementary Material.  
 
