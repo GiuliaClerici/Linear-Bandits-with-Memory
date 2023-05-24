@@ -270,7 +270,7 @@ for run in range(n_runs):
 #print("Total reward Combiner: ", rwds.sum())
 
 
-with open('data_combiner_m_' + str(alpha_star) +  '.pkl', 'wb') as f:
+with open('data_combiner_m_.pkl', 'wb') as f:
     pickle.dump([n_runs, T, alpha_star, m_star, runs_rwds], f)  # runs_rwds_o, runs_rwds_lin], f)
 
 '''

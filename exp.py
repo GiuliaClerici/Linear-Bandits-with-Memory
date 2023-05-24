@@ -291,7 +291,7 @@ for run in range(n_runs):
     runs_block_rwds = np.append(runs_block_rwds, block_rwds[:1200])
     runs_rwds_lin = np.append(runs_rwds_lin, rwds_lin[:1200])
 
-with open('data_rwds_' + str(alpha) +  '.pkl', 'wb') as f:
+with open('data_rwds_exp.pkl', 'wb') as f:
     pickle.dump([n_runs, T, alpha, m, runs_rwds, runs_rwds_greedy, runs_rwds_b, runs_block_rwds, runs_rwds_lin], f)
 
 '''
