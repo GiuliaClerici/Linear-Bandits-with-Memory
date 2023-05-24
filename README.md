@@ -1,5 +1,5 @@
 # Linear-Bandits-with-Memory
-This repository contains the code for Linear Bandits with Memory (LBM), to reproduce the experiments presented in a paper currently under revision.
+This repository contains the code for Linear Bandits with Memory (LBM), to reproduce the experiments presented in a paper currently under submission.
 
 This repository contains the following files:
 - [exp.py](exp.py) contains the code to reproduce the performance of O3M, OFUL and Greedy on a rotting instance of LBM. 
